@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Мой собственный сайт</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stail.css">
+</head>
+
+<body>
+    <!--<body bgcolor="00ff00">-->
+    <font color=rrggbb>
+        <h1>Самый большой заголовок</h1>
+    </font>
+    <h2>Заголовок поменьше</h2>
+    <h3>Заголовок еще меньше</h3>
+    <h4>Заголовок маленький</h4>
+    <h5>Заголовок очень маленький</h5>
+    <h6>Заголовок совсем маленький</h6>
+    <label><input type="checkbox" id="one" onchange="fun1()">
+        <b id="ido">Жирный текст</b></label><br>
+    <input type="checkbox">
+    <i>Наклонный текст</i><br>
+    <input type="checkbox">
+    <tt>Печатная машинка</tt><br>
+    <font size=7>Установка размера текста от 1-7</font><br>
+    <font size=4>Например 4 а выше 7</font><br>
+    <font color=rrggbb>Цвет текста можно выбрать</font> <br>
+    Здесь просто экспериментальный текст с которым можно провести эксперименты.<br>Применить разные теги форматирования
+    текста.
+    <font color=rrggbb>
+        <em>
+            <font size=5>
+                Или просто теги прокачать которые никуда коме массива текста не вставишь.
+            </font>
+        </em>
+    </font>
+    Както так.<br>
+    <a href="https://censoru.net/" target="_blank">Гиперссылка на цезор нет в отдельном окне</a><br>
+    <a
+        href="https://st2.depositphotos.com/3227965/5296/i/450/depositphotos_52965259-stock-photo-beautiful-wedding-bouquet-of-red.jpg">
+        Ссылка на картинку</a><br>
+
+    <img src="images.jpg" alt="flovers">
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTPxyZXIOm-_HHnmPfOuHvYgUjTn-NnXZqsVtMywXu3mGSdz9cpDp8IMtmA-Q&usqp=CAc"
+        alt="flov">
+
+    <hr size="25" width="500" color="00ff00">
+    <a href="#ido">Cсылка на элемент на странице Например Оглавлание</a>
+    <ul>
+        <li>Первый элемент списка</li>
+        <li>Второй элемент списка</li>
+        <a href="https://censoru.net/">Cсылки в виде списка</a>
+        <br>
+        <input type="month">
+        <br>
+        <input type="text">
+        <br>
+        <input type="number">
+        <br>
+        <a href="https://prodmashdnepr.com/"><img src="images.jpg" alt="flovers"></a>
+        <!--кликабельная картинка-->
+
+    </ul>
+
+    <input type="radio" name="r1" value="5">0
+    <input type="radio" name="r1" value="53">1
+    <input type="radio" name="r1" value="535">2
+    <button onclick="fun2()">Проверить какой из элементов выбран</button>
+
+    <select name="" id="mySelect" onchange="fun3()">
+        <option value="">Apple</option>
+        <option value="">Orange</option>
+        <option value="">Pineapple</option>
+        <option value="">Banana</option>
+    </select>
+    <br>
+    <input type="range" min="0" max="100" step="5" oninput="fun4()" id="volume">
+    <input type="text" id="i1">
+
+    <br>
+
+    <input type="range" min="0" max="100" step="2" oninput="fun5()" id="volume>
+    <div id="rut"></div>
+    <div id="test"></div>
+
+    
+    <div class="block1">
+        <p>Верхний левый угол:
+            <input type="range" id="rtl" min="0" max="100" value="0" oninput="fun10()">
+            <input type="text" id="ttl" value="0">
+        </p>
+        <p>Верхний правый угол:
+            <input type="range" id="rtr" min="0" max="100" value="0" oninput="fun10()">
+            <input type="text" id="ttr" value="0">
+        </p>
+        <p>Нижний правый угол:
+            <input type="range" id="rbr" min="0" max="100" value="0" oninput="fun10()">
+            <input type="text" id="tbr" value="0">
+        </p>
+        <p>Нижний левый угол:
+            <input type="range" id="rbl" min="0" max="100" value="0" oninput="fun10()">
+            <input type="text" id="tbl" value="0">
+        </p>
+    </div>
+    <div id="block"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
